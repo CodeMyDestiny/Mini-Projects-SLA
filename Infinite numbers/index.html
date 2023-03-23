@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Infinite Numbers Generator</title>
+    <style>
+      #numbers {
+        font-family: monospace;
+        font-size: 20px;
+        overflow-y: scroll;
+        height: 200px;
+        width: 400px;
+        border: 1px solid black;
+        padding: 10px;
+      }
+      
+      body{
+        background-color: #D2C8C8;
+      }
+
+      .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center; 
+      }
+
+      nav {
+  background-color: #400082;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  background-color: #BB2253;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: #333;
+  border-radius: 5px;
+}
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Mini Projects</h1>
+      <ul>                    
+        <li style="display: inline-block;"><a href="../index.html">Home</a></li>
+      </ul>
+  </nav>
+
+
+    <div class="container">
+    <h1>Infinite Numbers Generator</h1>
+    <div id="numbers"></div>
+    </div>
+    <script>
+      const numbersDiv = document.getElementById("numbers");
+      const maxNum = 100;
+      for (let i = 1; i <= maxNum; i++) {
+        numbersDiv.innerHTML += i + "<br>";
+      }
+    </script>
+  </body>
+</html>

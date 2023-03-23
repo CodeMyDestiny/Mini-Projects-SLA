@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <h1>Mini Projects</h1>
+      <ul>                    
+        <li style="display: inline-block;"><a href="../index.html">Home</a></li>
+      </ul>
+  </nav>
+
+    <h3>Use Del/Backspc to Reset</h3>
+    <h3>Enter / Numpad Enter Shows result</h3>
+    
+    <div class="calculator">
+      <div id="display">
+        <input type="text" id="screen" value="">
+      </div>
+      <button onclick="reset()">AC</button>
+      <button onclick="toggleSign()">+/-</button>
+      <button onclick="calc('%')">%</button>
+      <button onclick="calc('/')">/</button>
+      <button onclick="update(7)">7</button>
+      <button onclick="update(8)">8</button>
+      <button onclick="update(9)">9</button>
+      <button onclick="calc('*')">*</button>
+      <button onclick="update(4)">4</button>
+      <button onclick="update(5)">5</button>
+      <button onclick="update(6)">6</button>
+      <button onclick="calc('-')">-</button>
+      <button onclick="update(1)">1</button>
+      <button onclick="update(2)">2</button>
+      <button onclick="update(3)">3</button>
+      <button onclick="calc('+')">+</button>
+      <button></button>
+      <button onclick="update(0)">0</button>
+      <button onclick="calc('.')">.</button>
+      <button onclick="result ()">=</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

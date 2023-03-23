@@ -1,0 +1,125 @@
+/* Define grid styles */
+.calculator {
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    padding: 5px;
+    border: 5px solid #0c0c0c73;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  body{
+    background-color: #D2C8C8;
+  }
+  
+  /* Define button styles */
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #191825;
+    color: rgba(248, 245, 245, 0.692);
+    box-shadow: 2px 2px 2px #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Style the display screen */
+  #display {
+    grid-column: 1 / -1;
+    position: relative;
+    background-color: #a5a5a5;
+    font-size: 24px;
+    border: 2px solid #16161673;
+    padding: 10px;
+    text-align: right;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #ccc;
+  }
+
+  input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    text-align: right;
+    padding: 5px;
+    color: #333;
+    outline: none;
+  }
+
+  button:hover, button:focus {
+    background-color: #ebe5e5d7;
+    color: #000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-size: 1.1em;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  h3{
+    text-align: center;
+    margin: 10px;
+    }
+
+nav {
+  background-color: #400082;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  background-color: #BB2253;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: #333;
+  border-radius: 5px;
+}
+
+  
+  
+  

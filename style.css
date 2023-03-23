@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #D2C8C8;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100vh;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 150px; /* Set a fixed height */
+  width: 200px;
+  overflow: hidden; /* Prevent content overflow */
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.project:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+#project1 {
+  background-color: #f44336;
+}
+
+#project2 {
+  background-color: #9c27b0;
+}
+
+#project3 {
+  background-color: #2196f3;
+}
+
+#project4 {
+  background-color: #00bcd4;
+}
+
+#project5 {
+  background-color: #4caf50;
+}
+
+#project6 {
+  background-color: #ffc107;
+}
+
+#project7 {
+  background-color: #795548;
+}
+
+#project8 {
+  background-color: #607d8b;
+}
+
+#project9 {
+  background-color: #11f724;
+}
+
+#project10 {
+  background-color:#d10a56
+
+}
+
+h2 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Hide projects by default */
+.project-content {
+  display: none;
+  padding: 20px;
+}
+
+/* Show project content when opened */
+.project-content.open {
+  display: block;
+}
+
+a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits color from parent element */
+}
+
+nav {
+  background-color: #400082;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  background-color: #BB2253;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: #333;
+  border-radius: 5px;
+}
+

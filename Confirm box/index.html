@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Confirm Box</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D2C8C8;
+        }
+        #container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        #confirm-btn {
+            padding: 10px 20px;
+            background-color: #2bac1a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        #discard-btn {
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        nav {
+  background-color: #400082;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  background-color: #BB2253;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: #333;
+  border-radius: 5px;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>Mini Projects</h1>
+        <ul>                    
+          <li style="display: inline-block;"><a href="../index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <h1>Write your paragraph here</h1>
+        <textarea id="paragraph" rows="10"></textarea>
+        <div>
+            <button id="confirm-btn" onclick="confirmAction()">Keep Writing</button>
+            <button id="discard-btn" onclick="discardAction()">Discard</button>
+        </div>
+    </div>
+    <script>
+        function confirmAction() {
+            // Perform action if the user clicks "Keep Writing"
+            alert("Great! Keep writing your paragraph.");
+        }
+
+        function discardAction() {
+            // Ask user for confirmation if they want to discard the paragraph
+            var result = confirm("Are you sure you want to discard this paragraph?");
+            if (result == true) {
+                alert("Paragraph discarded successfully.");
+                document.getElementById("paragraph").value = "";
+            } else {
+                alert("Paragraph not discarded.");
+            }
+        }
+    </script>
+</body>
+</html>

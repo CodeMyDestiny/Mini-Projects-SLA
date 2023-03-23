@@ -1,0 +1,99 @@
+/* Body Styles */
+body {
+    background-color: #D2C8C8;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  #ctitle {
+    color: #333;
+    font-size: 32px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  /* Container Styles */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  /* Input Styles */
+  input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px;
+    width: 100px;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  /* Result Styles */
+  #result {
+    color: #333;
+    font-size: 24px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  nav {
+    background-color: #400082;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav {
+    background-color: #BB2253;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+  }
+  

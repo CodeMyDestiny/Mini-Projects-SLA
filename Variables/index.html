@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Difference between Var, Let, and Const Variables</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			color: #333;
+			background-color: #D2C8C8;
+		}
+		h2 {
+			font-size: 36px;
+			margin-top: 75px;
+			text-align: center;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 0 auto;
+			max-width: 800px;
+		}
+		.box {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			padding: 20px;
+			margin: 20px;
+			flex-basis: 300px;
+		}
+		h3 {
+			font-size: 24px;
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		p {
+			margin: 0;
+			line-height: 1.5;
+		}
+
+		nav {
+  background-color: #400082;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  background-color: #BB2253;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: #333;
+  border-radius: 5px;
+}
+	</style>
+</head>
+<body>
+
+	<nav>
+        <h1>Mini Projects</h1>
+        <ul>                    
+          <li style="display: inline-block;"><a href="../index.html">Home</a></li>
+        </ul>
+    </nav>
+	<h2>Difference between Var, Let, and Const Variables</h1>
+	<div class="container">
+		<div class="box">
+			<h3>Var</h2>
+			<p>Variables declared with <code>var</code> are function-scoped. They can be redeclared and reassigned.</p>
+		</div>
+		<div class="box">
+			<h3>Let</h2>
+			<p>Variables declared with <code>let</code> are block-scoped. They cannot be redeclared, but they can be reassigned.</p>
+		</div>
+		<div class="box">
+			<h3>Const</h2>
+			<p>Variables declared with <code>const</code> are block-scoped and cannot be reassigned or redeclared.</p>
+		</div>
+	</div>
+</body>
+</html>
